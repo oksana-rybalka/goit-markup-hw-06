@@ -264,10 +264,10 @@ img {
 }
 .mobile-contacts {
     font-style: normal;
-    padding-bottom: 42px;
+    
     width: 193px;
     display: flex;
-    padding-top: 168px;
+   /* padding-top: 168px;*/
 }
 
 
@@ -296,10 +296,12 @@ img {
 .mobile-soc-link-container {
     position: relative;
     display: flex;
-    padding-bottom: 40px;
+     margin-top: 42px;
 
 }
-
+.contacts-social {
+    margin-top: auto;
+}
 .mobile-soc-list {
     width: 280px;
     display: flex;
