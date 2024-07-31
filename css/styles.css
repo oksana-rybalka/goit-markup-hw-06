@@ -238,12 +238,12 @@ img {
     pointer-events: auto;
 }
 .mobil-menu-nav {
+    margin-bottom: auto;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 .mobil-nav-list {
-    margin-bottom: 0 auto;
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -257,7 +257,6 @@ img {
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
-    padding: 24px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .mobile-nav-link.current {
@@ -275,7 +274,7 @@ img {
 .mobile-contacts-list {
     display: flex;
     flex-direction: column;
-    gap:24px;
+    gap: 24px;
 }
 
 .mobile-contacts-item {
