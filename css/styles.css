@@ -237,8 +237,13 @@ img {
     visibility: visible;
     pointer-events: auto;
 }
-.nav-list {
-    margin-bottom: auto;
+.mobil-menu-nav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.mobil-nav-list {
+    margin-bottom: 0 auto;
     display: flex;
     align-items: baseline;
     flex-direction: column;
@@ -246,49 +251,75 @@ img {
     height: 200px;
     gap: 40px;
 }
- .nav-link {
+ .mobile-nav-link {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2e2f42;
     padding: 24px 0;
-    display: block;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.nav-link.current {
+.mobile-nav-link.current {
     color: #404bbf;
 }
-.contacts {
+.mobile-contacts {
     font-style: normal;
     padding-bottom: 42px;
     width: 193px;
-    height: 72px;
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 24px;
+    padding-top: 168px;
 }
-.mobil-soc-list {
+
+
+.mobile-contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap:24px;
+}
+
+.mobile-contacts-item {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    display: block;
+    padding: 24px o;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-contacts-link-email {
+    color: color: #434455;;
+}
+.mobile-contacts-link-tel {
+    color: #4d5ae5;
+}
+
+.mobile-soc-link-container {
+    position: relative;
+    display: flex;
+    padding-bottom: 40px;
+
+}
+
+.mobile-soc-list {
     width: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 40px;
-    margin-bottom: auto;
+    
 }
-.mob-social-item {
+.mobile-social-item {
     width: calc((100% - 120px) / 4);
     width: 40px;
     height: 40px;
    
 }
- .mob-social-item .social-icon {
+ .mobile-social-item .social-icon {
     fill: #f4f4fd;;
 }
-.mob-social-item .social-link {
+.mobile-social-item .social-link {
 background-color: #4d5ae5;
 border-radius: 50%;
 width: 100%;
