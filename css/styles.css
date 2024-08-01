@@ -1,5 +1,5 @@
 .hidden {
-    display: none;
+    display: ;
 }
 body {
     font-family: "Roboto", sans-serif;
@@ -456,9 +456,10 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .main-section-solution {
     max-width: 288px;
     padding-top: 96px;
-        padding-bottom: 96px;
-        padding-left: 16px;
-        padding-right: 19px;
+    padding-bottom: 96px;
+    padding-left: 16px;
+    padding-right: 19px;
+    margin: auto;
 }
 .visually-hidden {
     position: absolute;
@@ -502,20 +503,62 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 @media screen and (min-width: 768px) {
     .main-section-solution {
         max-width: 736px;
-            /*padding-top: 96px;
-            padding-bottom: 96px;
-            padding-left: 16px;
-            padding-right: 19px;*/
-            padding: 96px 16px;
+        padding: 96px 16px;
+        margin: auto;
     }
+
    .list-solutions {
-       display: flex;
-       flex-direction: row;
-       gap: 24px;
-       align-items: center;
+       flex-wrap: wrap;
+       column-gap: 24px;
+       row-gap: 72px;
+    
+       
    }
    .solution-item {
-       display: block;
-       width: calc;
+       width: calc((100% - 24px)/ 2);
+       
+   }
+   .title-solution {
+    text-align: left;
+   }
+   .text-solution {
+    text-align: left;
    }
 }
+@media screen and (min-width: 1158px) {
+    .main-section-solution {
+            padding: 120px 0;
+        }
+    .container-solution-icon {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       height: 112px;
+       width: 100%;
+       background-color: #f4f4fd;
+       border-radius: 4px;
+       border: 1px solid #8e8f99;
+       margin-bottom: 8px;
+       align-items: center;
+    
+        }
+    .list-solutions {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+        display: flex;
+    }
+   .solution-item {
+       width: calc((100% - 3*24px)/4);
+       display: block;
+        }
+  .title-solution {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 1.2;
+    } 
+        .text-solution {
+            font-weight: 400;
+        }
+    }
