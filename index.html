@@ -30,7 +30,7 @@
   </head>
 
   <body>
-    <header class="" class="page-header">
+    <header class="hidden" class="page-header">
       <div class="container header-container">
         <nav class="header-nav">
           <a class="logo heder-logo" href="./index.html"
@@ -142,14 +142,14 @@
     </header>
 
     <main class="page-main">
-      <section class="main-section-button">
+      <section class="hidden" class="main-section-button">
         <div class="container">
           <h1 class="main-page-title">Effective Solutions for Your Business</h1>
           <button class="button">Order Service</button>
         </div>
       </section>
 
-      <section class="" class="main-section-solution">
+      <section class="hidden" class="main-section-solution">
         <div class="container solution-container">
           <h2 class="visually-hidden">for busines</h2>
           <ul class="list-solutions">
@@ -205,13 +205,14 @@
         </div>
       </section>
 
-      <section class="hidden" class="section-team">
+      <section class="section-team">
         <div class="container">
           <h2 class="title-team">Our Team</h2>
           <ul class="list-team">
             <li class="team-item">
               <img
-                src="./images/img-marc-pc.jpg"
+                srcset="./images/img-marc.jpg 1x, ./images/img-marc@2.jpg 2x"
+                src="./images/img-camila.jpg"
                 alt="image Mark Guerrero"
                 width="264"
               />
@@ -252,7 +253,8 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-tom-pc.jpg"
+                srcset="./images/img-tom.jpg 1x, ./images/img-tom-@2.jpg 2x"
+                src="images/img-tom.jpg"
                 alt="image Tom Ford"
                 width="264"
               />
@@ -293,7 +295,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-camila-pc.jpg"
+                srcset="
+                  ./images/img-camila.jpg    1x,
+                  ./images/img-camila-@2.jpg 2x
+                "
+                src="./images/img-camila.jpg"
                 alt="image Camila Garcia"
                 width="264"
               />
@@ -334,7 +340,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/img-daniel-pc.jpg"
+                srcset="
+                  ./images/img-daniel.jpg    1x,
+                  ./images/img-daniel-@2.jpg 2x
+                "
+                src="./images/img-daniel.jpg"
                 alt="image Daniel Wilson"
                 width="264"
               />
