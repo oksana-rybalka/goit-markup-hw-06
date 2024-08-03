@@ -695,13 +695,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 /* portfolio section */
 
-.main-page-portfolio {
+/*.main-page-portfolio {
     padding-top: 96px;
     padding-bottom: 96px;
-}
+}*/
 .portfolio-container {
     padding-left: 16px;
     padding-right: 16px;
+    padding-top: 96px;
+        padding-bottom: 96px;
 }
 .portfolio-title {
     font-weight: 700;
